@@ -4,16 +4,23 @@ const places = require('../models/places.js')
 router.get('/', (req, res) => {
     res.render('places/index', { places })
 });
+//show
+router.get('/:id', (req, res) => {
+  let id = Number(req.params.id)
+  if (isNaN(id)) {
+    res.render('error404')
+  }
+  else if (!places[id]) {
+    res.render('error404')
+  }
+  else {
+    res.render('places/show', { place: places[id]})
+  }
+})
 
 router.get('/new', (req, res) => {
     res.render('places/new')
 });
-/*
-router.post('/', (req, res) => {
-    console.log(req.body)
-    res.send('POST /places')
-});
-*/
 
 router.post('/', (req, res) => {
     console.log(req.body)
@@ -27,7 +34,6 @@ router.post('/', (req, res) => {
       req.body.state = 'Parts Unknown'
     }
     places.push(req.body)
-    //res.send('POST /places')
     res.redirect('/places')
   })
   
