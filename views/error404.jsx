@@ -8,9 +8,10 @@ function error404 () {
               <h1>404: PAGE NOT FOUND</h1>
               <p>Oops, sorry, we can't find this page!</p>
               <div>
-                <img src="https://i.pinimg.com/originals/38/08/b6/3808b6d5efcd959522213a8c730d8044.png" alt="zenitsu demon slayer surprised"></img>
+                <img src="/images/zenitsu.jpg" alt="zenitsu demon slayer surprised" />
                 <div>
-                  image from pinterest at https://i.pinimg.com/originals/38/08/b6/3808b6d5efcd959522213a8c730d8044.png
+                  <p><a href="https://kimetsu-no-yaiba.fandom.com/wiki/Zenitsu_Agatsuma">Zenitsu Agatsuma</a></p>
+                  image from <a href="https://i.pinimg.com/originals/38/08/b6/3808b6d5efcd959522213a8c730d8044.png">pinterest</a>
                 </div>
               </div>
           </main>
@@ -19,3 +20,5 @@ function error404 () {
   };
   
 module.exports = error404;
+
+//"https://i.pinimg.com/originals/38/08/b6/3808b6d5efcd959522213a8c730d8044.png"

@@ -7,11 +7,12 @@ function home () {
           <main>
               <h1>HOME</h1>
               <div>
-                <img src="images\roads.jpg" width="700" height="500" alt="road to nowhere"></img>
+                <img src="images\stripPic.jpeg" width="90%" height="60%" alt="stuck in traffic in Las Vegas"></img>
               <div>
-                Photo by <a href="https://unsplash.com/@jplenio">Johannes Plenio</a> on <a href="https://unsplash.com/photos/2TQwrtZnl08">Unsplash</a>
+                Photo by <a href="https://www.facebook.com/edward.james.manansala">E.Manansala</a>
                 </div>
                 </div>
+                <br></br>
               <a href="/places">
                 <button className="btn-primary">Places Page</button>
               </a>
