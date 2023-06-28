@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('../default')
 
-function new_form () {
+function new_form (data) { //data
     return (
         <Def>
           <main>
@@ -13,7 +13,7 @@ function new_form () {
         </div>
         <div className="form-group">
             <label htmlFor="pic">Place Picture</label>
-            <input className="form-control" id="pic" name="pic" />
+            <input className="form-control" type="url" id="pic" name="pic" />
         </div>
         <div className="form-group">
             <label htmlFor="city">City</label>
@@ -32,6 +32,6 @@ function new_form () {
         </main>
         </Def>
     )
-};
+}
 
-module.exports = new_form;
+module.exports = new_form
