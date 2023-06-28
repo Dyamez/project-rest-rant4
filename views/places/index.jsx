@@ -6,7 +6,7 @@ function index (data) {
     return (
       <div className="col-sm-6">
         <h2>
-          <a href={`/places/${place.id}`} > 
+          <a href={`/places/${index}`} >
             {place.name}
           </a>
         </h2>
@@ -33,6 +33,3 @@ function index (data) {
 };
 
 module.exports = index
-
-//On line 9, instead of ${index}, had to replace it with {place.id} then added it
-// to the array at /models.places for it not to 404 the link.
