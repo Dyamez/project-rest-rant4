@@ -18,13 +18,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-   {/*  res.status(404).send('<h1>404 Page</h1>') */}
    res.render('error404')
 });
-/*
-app.get('/', (req, res) => {        //followup
-    let places = []
-    res.render('places/index', { places })
-});
-*/
+
 app.listen(process.env.PORT);

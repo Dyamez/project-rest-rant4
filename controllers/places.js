@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const places = require('../models/places');
+const places = require('../models/places.js');
 
 router.get('/', (req, res) => {
     res.render('places/index', { places })
@@ -7,7 +7,6 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
   console.log(req.body)
-  Place.create(req.body)
   if (!req.body.pic) {
     req.body.pic = 'https://place-puppy.com/300x300'
   }
@@ -16,7 +15,7 @@ router.post('/', (req, res) => {
   }
   if (!req.body.state) {
     req.body.state = 'Parts Unknown'
-  }
+  } 
   places.push(req.body)
   res.redirect('/places')
 })
