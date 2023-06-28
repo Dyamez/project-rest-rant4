@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('../default')
 
-function new_form (data) { //data
+function new_form (data) {
     return (
         <Def>
           <main>
