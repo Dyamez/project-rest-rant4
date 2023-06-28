@@ -2,7 +2,6 @@ const router = require('express').Router();
 const places = require('../models/places.js');
 
 router.get('/', (req, res) => {
-  //let places = []
     res.render('places/index', { places })
 });
 
@@ -11,7 +10,7 @@ router.get('/new', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  console.log(req.body) 
+  //console.log(req.body) 
   if (!req.body.pic) {
     req.body.pic = 'https://place-puppy.com/300x300'
   }
@@ -25,10 +24,9 @@ router.post('/', (req, res) => {
   res.redirect('/places')
 })
 
-//show                                   (if error, comment out *show route for testing)
-
+//show                                   
 router.get('/:id', (req, res) => {
-  let id = Number(req.params.id) 
+  let id = Number(req.params.id)
   if (isNaN(id)) {
     res.render('error404')
   }
