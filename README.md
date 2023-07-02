@@ -1,4 +1,4 @@
-# project-rest-rant Part 7
+# project-rest-rant Part 8
 BE class assignment
 
 ## In Progress
@@ -56,7 +56,7 @@ On Progress
 
 ### Introduction
 
-Typing Still...
+In Progress
 
 ### Drafting
 
