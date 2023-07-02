@@ -1,19 +1,3 @@
-const mongoose = require('mongoose')
-
-const placeSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  pic: String,
-  cuisines: { type: String, required: true },
-  city: { type: String, default: 'Parts Unknown' },
-  state: { type: String, default: 'California' },
-  founded: Number
-})
-
-module.exports = mongoose.model('Place', placeSchema)
-
-
-
-/*
 module.exports = [{
     id: 0,
     name: 'Jolibee',
@@ -44,5 +28,4 @@ module.exports = [{
     pic: 'https://img2.10bestmedia.com/Images/Photos/108426/p-pappadeaux-seafood-kitchen-166993-10150305443720978-133486205977-7888957-361239144-n_54_990x660_201405311940.jpg'
   }]
 
-  // added id's on the array as stand-in. 
-  */
+  // added id's on the array as stand-in.
